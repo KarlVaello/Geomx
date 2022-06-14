@@ -129,11 +129,13 @@
   <ItemGroup>
     <ClInclude Include="point.h" />
     <ClInclude Include="point3.h" />
+    <ClInclude Include="rectangle.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="point.cpp" />
     <ClCompile Include="point3.cpp" />
+    <ClCompile Include="rectangle.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

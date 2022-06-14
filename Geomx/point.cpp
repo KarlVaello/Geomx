@@ -1,5 +1,8 @@
 #include "point.h"
 
+Point::Point() {
+
+}
 
 Point::Point(int _x, int _y) {
 
@@ -11,7 +14,7 @@ Point::~Point() {
 
 }
 
-void Point::print_pointInfo() {
+void Point::print_info() {
 
-	std::cout << "[" << this->x << "," << this->y << "]" << std::endl;
+	std::cout << "(" << this->x << "," << this->y << ")";
 }

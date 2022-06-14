@@ -24,7 +24,7 @@ public:
 	inline void setZ(int z) { this->z = z; }
 	inline int getZ() { return this->z; }
 
-	virtual void print_pointInfo();
+	virtual void print_info();
 
 
 };

@@ -1,7 +1,10 @@
-#include "point.h"
-#include "point3.h"
 
 #include <vector>
+
+#include "point.h"
+#include "point3.h"
+#include "rectangle.h"
+
 
 int main()
 {
@@ -13,12 +16,18 @@ int main()
 	points.push_back(p0);
 	points.push_back(p1);
 
-
 	for (auto &s : points) {
 		
-		s->print_pointInfo();
+		s->print_info();
+		std::cout << std::endl;
 
 	}
+
+	Rectangle* r0 = new Rectangle(Point(0, 0), 10, 10);
+	r0->print_info();
+
+	Rectangle* r1 = new Rectangle(Point3(3, 0, 4), 10, 10);
+	r1->print_info();
 
 	return 0;
 }

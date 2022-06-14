@@ -11,7 +11,7 @@ Point3::~Point3() {
 
 }
 
-void Point3::print_pointInfo() {
+void Point3::print_info() {
 
-	std::cout << "[" << this->x << "," << this->y << "," << this->z << "]" << std::endl;
+	std::cout << "(" << this->x << "," << this->y << "," << this->z << ")";
 }

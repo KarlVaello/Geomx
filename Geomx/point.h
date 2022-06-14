@@ -10,6 +10,7 @@ private:
 
 public:
 
+	Point();
 	Point(int x, int y);
 	~Point();
 
@@ -19,6 +20,6 @@ public:
 	inline void setY(int y) { this->y = y; }
 	inline int getY() { return this->y; }
 
-	virtual void print_pointInfo();
+	virtual void print_info();
 };
 

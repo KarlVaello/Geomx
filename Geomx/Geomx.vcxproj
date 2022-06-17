@@ -127,11 +127,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="circle.h" />
     <ClInclude Include="point.h" />
     <ClInclude Include="point3.h" />
     <ClInclude Include="rectangle.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="circle.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="point.cpp" />
     <ClCompile Include="point3.cpp" />

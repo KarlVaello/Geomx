@@ -4,6 +4,7 @@
 #include "point.h"
 #include "point3.h"
 #include "rectangle.h"
+#include "circle.h"
 
 
 int main()
@@ -23,11 +24,17 @@ int main()
 
 	}
 
-	Rectangle* r0 = new Rectangle(Point(0, 0), 10, 10);
+	Rectangle* r0 = new Rectangle(p0, 10, 10);
 	r0->print_info();
 
-	Rectangle* r1 = new Rectangle(Point3(3, 0, 4), 10, 10);
+	Rectangle* r1 = new Rectangle(p1, 10, 10);
 	r1->print_info();
+
+	Circle* c0 = new Circle(p0, 10);
+	c0->print_info();
+
+	Circle* c1 = new Circle(p1, 4);
+	c1->print_info();
 
 	return 0;
 }

@@ -1,7 +1,8 @@
 #pragma once
+#include "geomx.h"
 #include "point.h"
 
-class Rectangle
+class Rectangle : public Geomx
 {
 private:
 	Point* o;

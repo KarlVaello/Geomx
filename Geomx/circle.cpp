@@ -1,7 +1,7 @@
 #include "circle.h"
 
 
-Circle::Circle(Point* _o, unsigned long _r) {
+Circle::Circle(Point* _o, unsigned long _r) : Geomx(_o) {
 	this->o = _o;
 	this->r = _r;
 }

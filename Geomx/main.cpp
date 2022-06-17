@@ -9,32 +9,18 @@
 
 int main()
 {
-	Point* p0 = new Point(10, 20);
-	Point* p1 = new Point3(10, 20, 45);
 
-	std::vector<Point*> points;
+	Geomx* g0 =new Rectangle(new Point3(10,20,0), 10, 10);
+	g0->print_info();
 
-	points.push_back(p0);
-	points.push_back(p1);
+	Geomx* g1 = new Rectangle(new Point(10, 20), 10, 10);
+	g1->print_info();
 
-	for (auto &s : points) {
-		
-		s->print_info();
-		std::cout << std::endl;
+	Geomx* g2 = new Circle(new Point(10, 8), 10);
+	g2->print_info();
 
-	}
-
-	Rectangle* r0 = new Rectangle(p0, 10, 10);
-	r0->print_info();
-
-	Rectangle* r1 = new Rectangle(p1, 10, 10);
-	r1->print_info();
-
-	Circle* c0 = new Circle(p0, 10);
-	c0->print_info();
-
-	Circle* c1 = new Circle(p1, 4);
-	c1->print_info();
+	Geomx* g3 = new Circle(new Point3(1, 6, 0), 5);
+	g3->print_info();
 
 	return 0;
 }

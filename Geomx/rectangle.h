@@ -5,20 +5,19 @@
 class Rectangle : public Geomx
 {
 private:
-	Point* o;
-	unsigned long h;
-	unsigned long w;
+	unsigned long m_h;
+	unsigned long m_w;
 
 public:
 
-	Rectangle(Point* _o, unsigned long _h, unsigned long _w);
-	~Rectangle();
+	Rectangle(Point* o, Geomx* parent, unsigned long h, unsigned long w);
+	virtual ~Rectangle();
 
-	inline void setH(unsigned long h) { this->h = h; }
-	inline unsigned long getH() { return this->h; }
+	inline void setH(unsigned long h) { this->m_h = h; }
+	inline unsigned long getH() { return this->m_h; }
 
-	inline void setW(unsigned long w) { this->w = w; }
-	inline unsigned long getW() { return this->w; }
+	inline void setW(unsigned long w) { this->m_w = w; }
+	inline unsigned long getW() { return this->m_w; }
 
 	void print_info();
 

@@ -1,18 +1,18 @@
 #include "circle.h"
 
 
-Circle::Circle(Point* _o, unsigned long _r) : Geomx(_o) {
-	this->o = _o;
-	this->r = _r;
+Circle::Circle(Point* o, Geomx* parent, unsigned long r) : Geomx(o, parent) {
+	this->m_r = r;
 }
 
 Circle::~Circle() {
-
+	std::cout << "Circle delete" << std::endl;
+	delete(this->getO());
 }
 
 void Circle::print_info() {
 
 	std::cout << "Circle[";
-	this->o->print_info();
-	std::cout << "," << this->r << "]" << std::endl;
+	this->getO()->print_info();
+	std::cout << "," << this->m_r << "]" << std::endl;
 }

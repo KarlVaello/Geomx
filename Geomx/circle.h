@@ -5,16 +5,15 @@
 class Circle : public Geomx
 {
 private:
-	Point* o;
-	unsigned long r;
+	unsigned long m_r;
 
 public:
 
-	Circle(Point* _o, unsigned long _r);
-	~Circle();
+	Circle(Point* o, Geomx* parent, unsigned long r);
+	virtual ~Circle();
 
-	inline void setR(unsigned long _r) { this->r = _r; }
-	inline unsigned long getR() { return this->r; }
+	inline void setR(unsigned long r) { this->m_r = r; }
+	inline unsigned long getR() { return this->m_r; }
 
 
 	void print_info();

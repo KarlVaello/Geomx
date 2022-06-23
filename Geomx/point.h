@@ -2,6 +2,16 @@
 
 #include <iostream>
 
+
+struct mystruct {
+
+	void print() {
+	
+	}
+
+};
+
+
 class Point
 {
 private:
@@ -10,11 +20,28 @@ private:
 
 public:
 
-	Point();
 	Point(int x, int y);
 	Point(const Point& cPoint);
 	Point(Point&& mPoint) noexcept;
 	virtual ~Point();
+
+	// Overload + 
+	Point operator+(const Point& b) const {
+
+		return Point(this->m_x + b.m_x, this->m_y + b.m_y);
+	}
+	// Overload - 
+	Point operator-(const Point& b) const {
+
+		return Point(this->m_x - b.m_x, this->m_y - b.m_y);
+	}
+	// Overload =
+	Point operator=(const Point& b) const {
+
+		return Point(b);
+	}
+
+
 
 	inline void setX(int x) { this->m_x = x; }
 	inline const int* getX() const { return &this->m_x; }

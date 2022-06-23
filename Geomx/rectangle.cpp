@@ -1,8 +1,7 @@
 #include "rectangle.h"
 
-Rectangle::Rectangle(Point* o, Geomx* parent, unsigned long h, unsigned long w) : Geomx (o, parent) {
-	this->m_h = h;
-	this->m_w = w;
+Rectangle::Rectangle(Point* o, Geomx* parent, unsigned long h, unsigned long w)
+	: m_h(h), m_w(w), Geomx (o, parent) {
 }
 
 Rectangle::~Rectangle() {

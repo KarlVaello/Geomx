@@ -1,8 +1,16 @@
 #include "geomx.h"
 
-Geomx::Geomx(Point* o, Geomx* parent) {
-	this->m_o = o;
-	this->m_parent = parent;
+Geomx::Geomx(Point* o, Geomx* parent) : m_o(o), m_parent(parent) {
+}
+
+Geomx::Geomx(const Geomx& cGeomx) : m_o(cGeomx.m_o), m_parent(cGeomx.m_parent) {
+	std::cout << "Geomx copy" << std::endl;
+
+}
+
+Geomx::Geomx(Geomx&& mGeomx) noexcept{
+	std::cout << "Geomx move" << std::endl;
+
 }
 
 Geomx::~Geomx() {
@@ -32,9 +40,11 @@ std::vector<Geomx*> Geomx::getChildrens() {
 
 Point* Geomx::getLocalPosition() {
 
+	return this->m_o;
 }
 
 Point* Geomx::getWorldPosition() {
 
+	return new Point(2,2);
 
 }

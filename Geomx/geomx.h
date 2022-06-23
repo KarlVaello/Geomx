@@ -16,6 +16,8 @@ private:
 public:
 
 	Geomx(Point* o, Geomx* parent);
+	Geomx(const Geomx& cGeomx);
+	Geomx(Geomx&& mGeomx) noexcept;
 	virtual ~Geomx();
 
 	inline void setO(Point* o) { this->m_o = o; }

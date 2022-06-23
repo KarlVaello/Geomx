@@ -1,8 +1,8 @@
 #include "circle.h"
 
 
-Circle::Circle(Point* o, Geomx* parent, unsigned long r) : Geomx(o, parent) {
-	this->m_r = r;
+Circle::Circle(Point* o, Geomx* parent, unsigned long r) 
+	: m_r(r), Geomx(o, parent) {
 }
 
 Circle::~Circle() {

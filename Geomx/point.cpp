@@ -18,17 +18,13 @@ Point::Point(Point&& mPoint) noexcept {
 	delete(&mPoint);
 }
 
+
 Point::~Point() {
 	std::cout << "Point deleted" << std::endl;
 }
 
+
+
 void Point::print_info() {
-
 	std::cout << "(" << this->m_x << "," << this->m_y << ")";
-
-	int a[] = { 1, 2, 3 };
-	int b[2];
-	
-	int c[3] = { 1,2,3 };
-	int* f[] = { new int(10), new int(9), new int(0) };
 }

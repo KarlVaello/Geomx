@@ -6,6 +6,21 @@
 #include "rectangle.h"
 #include "circle.h"
 
+void mod_function(int& a)
+{
+	a = 19;
+}
+
+
+void mod_function_array(int* a)
+{
+	a[0] = 2;
+	a[1] = 4;
+	a[2] = 6;
+
+}
+
+
 
 int main()
 {
@@ -27,7 +42,7 @@ int main()
 	g0->addChild(g2);
 	g0->addChild(g3);
 
-	std::cout << "--" << std::endl;
+	std::cout << "--";
 	g0->print_info();
 	std::cout << "\t";
 	g1->print_info();
@@ -39,6 +54,42 @@ int main()
 	delete(g0);
 	delete(g1);
 
+	Point* pr1 = new Point(2,3);
+	Point* pr2 = new Point(3,2);
+
+	Point pr3 = *pr1 + *pr2;
+
+	Point* pr4 = new Point(8, 13);
+	Point* pr5 = pr4;
+
+	pr3.print_info();
+
+	std::cout << std::endl;
+	pr5->print_info();
+	std::cout << std::endl;
+
+	int a = 6954;
+
+	int* b = &a;
+
+	std::cout << "a: " << a << std::endl;
+	std::cout << "b: " << *b << std::endl;
+
+	mod_function(a);
+	std::cout << "a: " << a << std::endl;
+
+	mod_function(*b);
+	std::cout << "b: " << *b << std::endl;
+
+	int arrat[3] = { 0, 0, 0 };
+
+	mod_function_array(arrat);
+
+	for (size_t i = 0; i < 3; i++)
+	{
+		std::cout << "arrat[" << i << "]: " << arrat[i] << std::endl;
+
+	}
 
 	return 0;
 }

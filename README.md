@@ -1,8 +1,11 @@
 # Geomx
 
-structured geometry library
+structured geometry and 3d library, very object oriented library
 
-point
-point3
-rectangle
-circle
+- point (2d points)
+- point3 (3d points)
+- rectangle 
+- circle
+- vector (and vector operations)
+
+- tree and layer storing

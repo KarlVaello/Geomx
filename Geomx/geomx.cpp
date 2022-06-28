@@ -1,9 +1,9 @@
 #include "geomx.h"
 
-Geomx::Geomx(Point* o, Geomx* parent) : m_o(o), m_parent(parent) {
+Geomx::Geomx(Point* o, Rotation* rot, Geomx* parent) : m_o(o), m_rot(rot), m_parent(parent) {
 }
 
-Geomx::Geomx(const Geomx& cGeomx) : m_o(cGeomx.m_o), m_parent(cGeomx.m_parent) {
+Geomx::Geomx(const Geomx& cGeomx) : m_o(cGeomx.m_o), m_rot(cGeomx.m_rot), m_parent(cGeomx.m_parent) {
 	//std::cout << "Geomx copy" << std::endl;
 
 }

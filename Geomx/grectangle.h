@@ -10,7 +10,7 @@ private:
 
 public:
 
-	GRectangle(Point* o, Geomx* parent, unsigned long h, unsigned long w);
+	GRectangle(Point* o, Rotation* rot, Geomx* parent, unsigned long h, unsigned long w);
 	virtual ~GRectangle();
 
 	void deleteAsComposed();

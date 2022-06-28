@@ -1,7 +1,7 @@
 #include "grectangle.h"
 
-GRectangle::GRectangle(Point* o, Geomx* parent, unsigned long h, unsigned long w)
-	: m_h(h), m_w(w), Geomx (o, parent) {
+GRectangle::GRectangle(Point* o, Rotation* rot, Geomx* parent, unsigned long h, unsigned long w)
+	: m_h(h), m_w(w), Geomx (o, rot, parent) {
 }
 
 GRectangle::~GRectangle() {

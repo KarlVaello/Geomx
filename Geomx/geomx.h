@@ -9,13 +9,13 @@ class Geomx
 private:
 
 	Point* m_o;
-	Rotation* m_r;
+	Rotation* m_rot;
 	Geomx* m_parent;
 	std::vector<Geomx*> m_childrens;
 
 public:
 
-	Geomx(Point* o, Geomx* parent);
+	Geomx(Point* o, Rotation* rot, Geomx* parent);
 	Geomx(const Geomx& cGeomx);
 	Geomx(Geomx&& mGeomx) noexcept;
 	virtual ~Geomx();

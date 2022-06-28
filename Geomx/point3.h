@@ -17,6 +17,9 @@ public:
 	inline void setZ(int z) { this->m_z = z; }
 	inline const int* getZ() const { return &this->m_z; }
 
+	virtual void move3(int x, int y, int z) {this->setX(x); this->setY(y); this->m_z = z; }
+
+
 	virtual void print_info();
 
 

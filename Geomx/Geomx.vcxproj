@@ -127,19 +127,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="circle.h" />
+    <ClInclude Include="gcircle.h" />
     <ClInclude Include="geomx.h" />
+    <ClInclude Include="layer.h" />
     <ClInclude Include="point.h" />
     <ClInclude Include="point3.h" />
-    <ClInclude Include="rectangle.h" />
+    <ClInclude Include="grectangle.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="circle.cpp" />
+    <ClCompile Include="gcircle.cpp" />
     <ClCompile Include="geomx.cpp" />
+    <ClCompile Include="layer.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="point.cpp" />
     <ClCompile Include="point3.cpp" />
-    <ClCompile Include="rectangle.cpp" />
+    <ClCompile Include="grectangle.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

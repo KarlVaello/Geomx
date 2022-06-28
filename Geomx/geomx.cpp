@@ -4,17 +4,17 @@ Geomx::Geomx(Point* o, Geomx* parent) : m_o(o), m_parent(parent) {
 }
 
 Geomx::Geomx(const Geomx& cGeomx) : m_o(cGeomx.m_o), m_parent(cGeomx.m_parent) {
-	std::cout << "Geomx copy" << std::endl;
+	//std::cout << "Geomx copy" << std::endl;
 
 }
 
 Geomx::Geomx(Geomx&& mGeomx) noexcept{
-	std::cout << "Geomx move" << std::endl;
+	//std::cout << "Geomx move" << std::endl;
 
 }
 
 Geomx::~Geomx() {
-	std::cout << "Geomx delete" << std::endl;
+	//std::cout << "Geomx delete" << std::endl;
 }
 
 void Geomx::print_info() {
@@ -22,6 +22,13 @@ void Geomx::print_info() {
 	std::cout << "Geomx[";
 	this->m_o->print_info();
 	std::cout << std::endl;
+	
+	if (m_childrens.size() != 0) {
+		for (auto& s : m_childrens) {
+			std::cout << "--";
+			s->print_info();
+		}
+	}
 }
 
 void Geomx::addChild(Geomx* child) {
@@ -30,7 +37,6 @@ void Geomx::addChild(Geomx* child) {
 
 	child->m_o->setX(*child->m_o->getX() - *this->m_o->getX());
 	child->m_o->setY(*child->m_o->getY() - *this->m_o->getY());
-	
 }
 
 std::vector<Geomx*> Geomx::getChildrens() {
@@ -46,5 +52,4 @@ Point* Geomx::getLocalPosition() {
 Point* Geomx::getWorldPosition() {
 
 	return new Point(2,2);
-
 }

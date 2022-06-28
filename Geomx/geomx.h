@@ -24,7 +24,7 @@ public:
 	inline Point* getO() { return this->m_o; }
 
 	inline Geomx* getParent() { return this->m_parent; }
-	inline void setParent(Geomx* _parent) { this->m_parent = m_parent; }
+	inline void setParent(Geomx* parent) { this->m_parent = parent; }
 
 	void addChild(Geomx* child);
 	std::vector<Geomx*> getChildrens();

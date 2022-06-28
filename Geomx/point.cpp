@@ -1,15 +1,15 @@
-#include "point3.h"
+#include "point.h"
 
-Point3::Point3(int x, int y, int z) : m_x(x), m_y(y), m_z(z) {
+Point::Point(int x, int y, int z) : m_x(x), m_y(y), m_z(z) {
 	//std::cout << "Point3 created" << std::endl;
 
 }
 
-Point3::~Point3() {
+Point::~Point() {
 	//std::cout << "Point deleted" << std::endl;
 }
 
-void Point3::print_info() {
+void Point::print_info() {
 
 	std::cout << "(" << *this->getX() << "," << *this->getY() << "," << this->m_z << ")";
 }

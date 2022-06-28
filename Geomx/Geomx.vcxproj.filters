@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="point3.h">
+    <ClInclude Include="point.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="grectangle.h">
@@ -38,7 +38,7 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="point3.cpp">
+    <ClCompile Include="point.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="grectangle.cpp">

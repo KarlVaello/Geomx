@@ -130,7 +130,7 @@
     <ClInclude Include="gcircle.h" />
     <ClInclude Include="geomx.h" />
     <ClInclude Include="layer.h" />
-    <ClInclude Include="point3.h" />
+    <ClInclude Include="point.h" />
     <ClInclude Include="grectangle.h" />
     <ClInclude Include="rotation.h" />
   </ItemGroup>
@@ -139,7 +139,7 @@
     <ClCompile Include="geomx.cpp" />
     <ClCompile Include="layer.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="point3.cpp" />
+    <ClCompile Include="point.cpp" />
     <ClCompile Include="grectangle.cpp" />
     <ClCompile Include="rotation.cpp" />
   </ItemGroup>

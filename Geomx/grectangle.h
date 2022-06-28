@@ -1,6 +1,6 @@
 #pragma once
 #include "geomx.h"
-#include "point3.h"
+#include "point.h"
 
 class GRectangle : public Geomx
 {
@@ -10,7 +10,7 @@ private:
 
 public:
 
-	GRectangle(Point3* o, Geomx* parent, unsigned long h, unsigned long w);
+	GRectangle(Point* o, Geomx* parent, unsigned long h, unsigned long w);
 	virtual ~GRectangle();
 
 	void deleteAsComposed();

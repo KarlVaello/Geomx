@@ -1,9 +1,8 @@
 #pragma once
-#include "point.h"
 #include <iostream>
 
 
-class Point3
+class Point
 {
 private:
 
@@ -13,8 +12,8 @@ private:
 
 public:
 
-	Point3(int x, int y, int z);
-	virtual ~Point3();
+	Point(int x, int y, int z);
+	virtual ~Point();
 
 	inline void setX(int x) { this->m_x = x; }
 	inline const int* getX() const { return &this->m_x; }

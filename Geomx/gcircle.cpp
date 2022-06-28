@@ -1,7 +1,7 @@
 #include "gcircle.h"
 
 
-GCircle::GCircle(Point3* o, Geomx* parent, unsigned long r)
+GCircle::GCircle(Point* o, Geomx* parent, unsigned long r)
 	: m_r(r), Geomx(o, parent) {
 }
 

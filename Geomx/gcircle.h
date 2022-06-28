@@ -1,6 +1,6 @@
 #pragma once
 #include "geomx.h"
-#include "point3.h"
+#include "point.h"
 
 class GCircle : public Geomx
 {
@@ -9,7 +9,7 @@ private:
 
 public:
 
-	GCircle(Point3* o, Geomx* parent, unsigned long r);
+	GCircle(Point* o, Geomx* parent, unsigned long r);
 	virtual ~GCircle();
 
 	inline void setR(unsigned long r) { this->m_r = r; }

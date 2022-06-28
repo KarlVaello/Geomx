@@ -1,6 +1,6 @@
 #include "geomx.h"
 
-Geomx::Geomx(Point3* o, Geomx* parent) : m_o(o), m_parent(parent) {
+Geomx::Geomx(Point* o, Geomx* parent) : m_o(o), m_parent(parent) {
 }
 
 Geomx::Geomx(const Geomx& cGeomx) : m_o(cGeomx.m_o), m_parent(cGeomx.m_parent) {
@@ -44,12 +44,12 @@ std::vector<Geomx*> Geomx::getChildrens() {
 	return this->m_childrens;
 }
 
-Point3* Geomx::getLocalPosition() {
+Point* Geomx::getLocalPosition() {
 
 	return this->m_o;
 }
 
-Point3* Geomx::getWorldPosition() {
+Point* Geomx::getWorldPosition() {
 
-	return new Point3(2,2,0);
+	return new Point(2,2,0);
 }

@@ -1,6 +1,6 @@
 #include "grectangle.h"
 
-GRectangle::GRectangle(Point* o, Geomx* parent, unsigned long h, unsigned long w)
+GRectangle::GRectangle(Point3* o, Geomx* parent, unsigned long h, unsigned long w)
 	: m_h(h), m_w(w), Geomx (o, parent) {
 }
 

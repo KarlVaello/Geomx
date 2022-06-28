@@ -1,27 +1,27 @@
 #pragma once
 #include <vector>
-#include "point.h"
+#include "point3.h"
+#include "rotation.h"
 
 class Geomx
 {
 
 private:
 
-	Point* m_o;
-	
+	Point3* m_o;
+	Rotation* m_r;
 	Geomx* m_parent;
-
 	std::vector<Geomx*> m_childrens;
 
 public:
 
-	Geomx(Point* o, Geomx* parent);
+	Geomx(Point3* o, Geomx* parent);
 	Geomx(const Geomx& cGeomx);
 	Geomx(Geomx&& mGeomx) noexcept;
 	virtual ~Geomx();
 
-	inline void setO(Point* o) { this->m_o = o; }
-	inline Point* getO() { return this->m_o; }
+	inline void setO(Point3* o) { this->m_o = o; }
+	inline Point3* getO() { return this->m_o; }
 
 	inline Geomx* getParent() { return this->m_parent; }
 	inline void setParent(Geomx* parent) { this->m_parent = parent; }
@@ -29,8 +29,8 @@ public:
 	void addChild(Geomx* child);
 	std::vector<Geomx*> getChildrens();
 
-	Point* getLocalPosition();
-	Point* getWorldPosition();
+	Point3* getLocalPosition();
+	Point3* getWorldPosition();
 
 
 	virtual void print_info();

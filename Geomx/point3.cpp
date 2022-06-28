@@ -1,6 +1,6 @@
 #include "point3.h"
 
-Point3::Point3(int x, int y, int z) : m_z(z), Point (x, y) {
+Point3::Point3(int x, int y, int z) : m_x(x), m_y(y), m_z(z) {
 	//std::cout << "Point3 created" << std::endl;
 
 }
